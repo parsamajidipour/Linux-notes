@@ -1,0 +1,6 @@
+services:
+  app:
+    image: nginx:alpine
+    tmpfs:
+      - /run:size=64m,mode=755
+      - /tmp:size=256m,mode=1777,noexec,nosuid,nodev

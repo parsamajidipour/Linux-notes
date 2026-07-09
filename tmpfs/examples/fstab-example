@@ -1,0 +1,5 @@
+# Temporary scratch directory backed by tmpfs.
+# Data disappears after unmount/reboot.
+# Use only for bounded, disposable data.
+
+tmpfs /mnt/scratch tmpfs defaults,size=1G,mode=1777,nosuid,nodev,noexec 0 0

@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tmpfs-example
+spec:
+  containers:
+    - name: app
+      image: busybox:stable
+      command: ["sh", "-c", "df -h /scratch && sleep 3600"]
+      volumeMounts:
+        - name: scratch
+          mountPath: /scratch
+  volumes:
+    - name: scratch
+      emptyDir:
+        medium: Memory
+        sizeLimit: 512Mi
