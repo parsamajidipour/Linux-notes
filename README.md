@@ -18,16 +18,6 @@ Most notes start with a question I had or a problem I encountered. The goal is t
 * Security
 * Anything else that makes me stop and think, *"How does this actually work?"*
 
-## Repository Structure
-
-```text
-notes/
-    topic-name/
-        README.md
-```
-
-Each directory focuses on a single topic.
-
 ## Why this repository exists
 
 I often forget small details after a few months. Writing things down helps me understand them better and gives me a place to return to when I need a quick refresher.
